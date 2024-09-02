@@ -1,15 +1,7 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
- */
-
-
-/* THIS FILE WAS GENERATED!
- *
- * This file was generated automatically. You may or may not want to
- * edit it directly.
  */
 
 #include <behaviors.dtsi>
@@ -39,31 +31,21 @@
 
         default_layer {
             bindings = <
-&kp MINUS     &kp N1            &kp N2          &kp N3          &kp N4              &kp N5  &mo 3                                                                                                &mo 3         &kp N6  &kp N7       &kp N8           &kp N9                      &kp N0                     &kp EQUAL
-&kp TAB       &kp Q             &kp W           &kp E           &kp R               &kp T   &trans                                                                                               &kp C_VOL_UP  &kp Y   &kp U        &kp I            &kp O                       &kp P                      &kp BSLH
-&hm CAPS ESC  &hm LEFT_SHIFT A  &hm LEFT_GUI S  &hm LEFT_ALT D  &hm LEFT_CONTROL F  &kp G   &mo 2                        &kp LCTRL       &kp LALT    &kp LGUI   &kp RCTRL                        &kp C_VOL_DN  &kp H   &hm RCTRL J  &hm RIGHT_ALT K  &hm RIGHT_GUI L             &hm RIGHT_SHIFT SEMICOLON  &kp SQT
-&kp LSHFT     &kp Z             &kp X           &kp C           &kp V               &kp B                                                &kp HOME    &kp PG_UP                                                 &kp N   &kp M        &kp COMMA        &kp DOT                     &kp FSLH                   &kp RSHIFT
-&kp LCTRL     &kp LGUI          &hm LALT GRAVE  &kp LEFT        &kp RIGHT                           &hm LCTRL BACKSPACE  &hm LSHIFT DEL  &kp END     &kp PG_DN  &hm RALT ENTER  &hm RCTRL SPACE                        &kp UP       &kp DOWN         &hm RIGHT_ALT LEFT_BRACKET  &hm RGUI RIGHT_BRACKET     &kp RCTRL
-            >;
-        };
-
-        layer_keypad {
-            bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4   &kp N5  &trans                                                               &mo 3  &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R    &kp T   &none                                                                &none  &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &kp F    &kp G   &none             &trans   &trans      &trans  &trans                &none  &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V    &kp B                              &kp HOME    &trans                               &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp HOME  &kp END                  &kp BSPC  &kp DEL  &kp END     &trans  &kp ENTER  &kp KP_N0                 &kp PG_UP   &kp PG_DN     &kp KP_DOT     &kp RBKT         &mo 2
+&kp MINUS     &kp N1            &kp N2          &kp N3          &kp N4              &kp N5  &mo 2                                                                               &mo 2         &kp N6  &kp N7       &kp N8           &kp N9            &kp N0                     &kp EQUAL
+&kp TAB       &kp Q             &kp W           &kp E           &kp R               &kp T   &tog 4                                                                              &kp C_VOL_UP  &kp Y   &kp U        &kp I            &kp O             &kp P                      &kp BSLH
+&hm CAPS ESC  &hm LEFT_SHIFT A  &hm LEFT_GUI S  &hm LEFT_ALT D  &hm LEFT_CONTROL F  &kp G   &tog 1                   &kp LCTRL   &kp LALT    &kp LGUI   &kp RCTRL               &kp C_VOL_DN  &kp H   &hm RCTRL J  &hm RIGHT_ALT K  &hm RIGHT_GUI L   &hm RIGHT_SHIFT SEMICOLON  &kp SQT
+&kp TAB       &kp Z             &kp X           &kp C           &kp V               &kp B                                        &kp HOME    &kp PG_UP                                        &kp N   &kp M        &kp COMMA        &kp DOT           &kp FSLH                   &tog 1
+&tog 1        &kp CAPSLOCK      &kp GRAVE       &kp LEFT        &kp RIGHT                           &lt 1 BACKSPACE  &kp DELETE  &kp END     &kp PG_DN  &kp ENTER  &lt 1 SPACE                        &kp UP       &kp DOWN         &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &tog 1
             >;
         };
 
         layer_fn {
             bindings = <
-&kp F1  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &tog 1                                                           &mo 3         &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                                           &trans        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                                            &kp C_VOL_UP  &trans  &trans  &trans  &trans  &trans   &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none           &trans  &trans    &trans  &trans                 &kp C_VOL_DN  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0           &trans  &trans    &trans  &trans                 &kp C_VOL_DN  &trans  &trans  &trans  &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                          &trans    &trans                                       &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans  &trans  &kp BACKSPACE                        &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans  &trans  &kp BACKSPACE                        &trans  &trans  &trans  &trans   &to 0
             >;
         };
 
@@ -89,11 +71,11 @@
 
         layer_NO_MODS {
             bindings = <
-&kp MINUS  &kp N1    &kp N2     &kp N3    &kp N4     &kp N5  &mo 3                                                                                  &mo 3            &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp EQUAL
-&kp TAB    &kp Q     &kp W      &kp E     &kp R      &kp T   &kp LGUI                                                                               &kp RGUI         &kp Y   &kp U   &kp I      &kp O     &kp P          &kp BSLH
-&kp ESC    &kp A     &kp S      &kp D     &kp F      &kp G   &kp LEFT_SHIFT                 &kp LCTRL  &kp LALT    &kp LALT   &kp RCTRL             &kp RIGHT_SHIFT  &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z     &kp X      &kp C     &kp V      &kp B                                             &kp HOME    &kp PG_UP                                         &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RIGHT_SHIFT
-&tog 2     &kp CAPS  &kp GRAVE  &kp LEFT  &kp RIGHT                          &kp BACKSPACE  &kp DEL    &kp END     &kp PG_DN  &kp ENTER  &kp SPACE                           &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &tog 5
+&kp MINUS  &kp N1    &kp N2     &kp N3    &kp N4     &kp N5  &mo 2                                                                             &mo 2            &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp EQUAL
+&kp TAB    &kp Q     &kp W      &kp E     &kp R      &kp T   &to 0                                                                             &kp RIGHT_GUI    &kp Y   &kp U   &kp I      &kp O     &kp P          &kp BSLH
+&kp ESC    &kp A     &kp S      &kp D     &kp F      &kp G   &to 0                 &kp LCTRL  &kp LALT    &kp RIGHT_ALT  &kp RCTRL             &kp RIGHT_SHIFT  &kp H   &kp J   &kp K      &kp L     &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z     &kp X      &kp C     &kp V      &kp B                                    &kp HOME    &kp PG_UP                                             &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RIGHT_SHIFT
+&to 1      &kp CAPS  &kp GRAVE  &kp LEFT  &kp RIGHT                 &kp BACKSPACE  &kp DEL    &kp END     &kp PG_DN      &kp ENTER  &kp SPACE                           &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 1
             >;
         };
     };
