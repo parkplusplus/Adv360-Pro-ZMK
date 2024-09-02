@@ -31,21 +31,21 @@
 
         default_layer {
             bindings = <
-&kp MINUS     &kp N1            &kp N2          &kp N3          &kp N4              &kp N5  &mo 2                                                                               &mo 2         &kp N6  &kp N7       &kp N8           &kp N9            &kp N0                     &kp EQUAL
-&kp TAB       &kp Q             &kp W           &kp E           &kp R               &kp T   &tog 4                                                                              &kp C_VOL_UP  &kp Y   &kp U        &kp I            &kp O             &kp P                      &kp BSLH
-&hm CAPS ESC  &hm LEFT_SHIFT A  &hm LEFT_GUI S  &hm LEFT_ALT D  &hm LEFT_CONTROL F  &kp G   &tog 1                   &kp LCTRL   &kp LALT    &kp LGUI   &kp RCTRL               &kp C_VOL_DN  &kp H   &hm RCTRL J  &hm RIGHT_ALT K  &hm RIGHT_GUI L   &hm RIGHT_SHIFT SEMICOLON  &kp SQT
-&kp TAB       &kp Z             &kp X           &kp C           &kp V               &kp B                                        &kp HOME    &kp PG_UP                                        &kp N   &kp M        &kp COMMA        &kp DOT           &kp FSLH                   &tog 1
-&tog 1        &kp CAPSLOCK      &kp GRAVE       &kp LEFT        &kp RIGHT                           &lt 1 BACKSPACE  &kp DELETE  &kp END     &kp PG_DN  &kp ENTER  &lt 1 SPACE                        &kp UP       &kp DOWN         &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &tog 1
+&kp MINUS       &hm F1 N1         &hm F2 N2       &hm F3 N3       &hm F4 N4           &hm F5 N5  &mo 2                                                                                      &mo 2         &hm F6 N6  &hm F7 N7    &hm F8 N8        &hm F9 N9         &hm F10 N0                 &hm F11 EQUAL
+&kp TAB         &kp Q             &kp W           &kp E           &kp R               &kp T      &tog 4                                                                                     &kp C_VOL_UP  &kp Y      &kp U        &kp I            &kp O             &kp P                      &hm F12 BSLH
+&hm CAPS ESC    &hm LEFT_SHIFT A  &hm LEFT_GUI S  &hm LEFT_ALT D  &hm LEFT_CONTROL F  &kp G      &tog 1                          &kp LCTRL   &kp LALT    &kp LGUI   &kp RCTRL               &kp C_VOL_DN  &kp H      &hm RCTRL J  &hm RIGHT_ALT K  &hm RIGHT_GUI L   &hm RIGHT_SHIFT SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z             &kp X           &kp C           &kp V               &kp B                                                  &kp HOME    &kp PG_UP                                        &kp N      &kp M        &kp COMMA        &kp DOT           &kp FSLH                   &kp TAB
+&tog 1          &kp TAB           &kp GRAVE       &kp LEFT        &kp RIGHT                              &hm LEFT_ALT BACKSPACE  &kp DELETE  &kp END     &kp PG_DN  &kp ENTER  &lt 1 SPACE                           &kp UP       &kp DOWN         &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &tog 1
             >;
         };
 
         layer_fn {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                                           &trans        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                                            &kp C_VOL_UP  &trans  &trans  &trans  &trans  &trans   &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &to 0           &trans  &trans    &trans  &trans                 &kp C_VOL_DN  &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans    &trans                                       &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans  &trans  &kp BACKSPACE                        &trans  &trans  &trans  &trans   &to 0
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans                                                    &trans        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                                     &kp C_VOL_UP  &trans  &trans  &trans  &trans  &trans   &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0           &trans  &trans    &trans  &trans          &kp C_VOL_DN  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans    &trans                                &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans  &trans  &trans                        &trans  &trans  &trans  &trans   &to 0
             >;
         };
 
